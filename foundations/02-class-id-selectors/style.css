@@ -1,0 +1,16 @@
+.odd {
+    background-color: rgb(248, 160, 160);
+    font-family: Verdana, 'DejaV Sans', sans-serif;
+}
+#one {
+    color: blue;
+    font-size: 32px;
+}
+.exception {
+    font-size: 24px;
+}
+#second {
+    background-color: rgb(159, 228, 159);
+    font-size: 24px;
+    font-weight: 600;
+}
