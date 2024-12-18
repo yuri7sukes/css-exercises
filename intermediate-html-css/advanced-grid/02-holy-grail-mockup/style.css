@@ -5,6 +5,11 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 2fr 1fr 12fr 1fr;
+  gap: 4px;
+  height: 100vh;
 }
 
 .container div {
@@ -13,20 +18,58 @@
   font-family: Helvetica;
   font-weight: bold;
   color: white;
+  
+  
 }
 
 .header {
   background-color: #393f4d;
-}
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 4fr
 
+}
+ul {list-style:none;}
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style:none;
 }
+.nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.menu > ul {
+  
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  padding:0;
+  margin:0;
+  width: 80vw;
+  
+  justify-content: end;
 
+}
+.logo {
+  justify-self: start;
+}
+.menu {
+  align-self: center;
+}
 .sidebar {
   background-color: #C50208;
+  grid-row: 2 / 4;
+  
+  display: grid;
+  align-content: space-between;
+  grid-template-rows: 15% 15% 15% 15%;
 }
+.side-content,
+.photo {
+  display: grid;
+  align-items: center;
+}
+
 
 .sidebar .photo {
   background-color: white;
@@ -55,6 +98,10 @@
 
 .article {
   background-color: #bccbde;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 15px;
 }
 
 .article p {
@@ -68,6 +115,7 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  
 }
 
 .card p {
@@ -83,9 +131,11 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / 3;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+  
 }
